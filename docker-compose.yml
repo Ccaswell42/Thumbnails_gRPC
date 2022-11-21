@@ -1,0 +1,13 @@
+version: '3'
+services:
+  go-thumbnails:
+    build:
+      context: .
+    ports:
+      - "8081:8081"
+    depends_on:
+      - redis
+  redis:
+    image: redis:3.0
+    ports:
+      - "6379:6379"
