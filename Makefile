@@ -1,11 +1,11 @@
 DIR = Downloads
 PROTO = proto/srvc.proto
 CONTAINERID = $(shell docker ps -a | grep thumb | cut -b 1-12)
-LINKS = https://www.youtube.com/watch?v=hCnsbtxa7h8 \
- https://www.youtube.com/watch?v=4nprgvVnVXU \
- https://www.youtube.com/watch?v=YNM56qGyfAk \
-  https://www.youtube.com/watch?v=wzTh992chmE \
-  https://www.youtube.com/watch?v=MIdr2omypC4
+LINKS = https://www.youtube.com/watch?v=xhSqouL7elY \
+ https://www.youtube.com/watch?v=JxS5E-kZc2s \
+https://www.youtube.com/watch?v=OUQ58aNzVpg&t=129s \
+  https://www.youtube.com/watch?v=QUm5A5D8uZI \
+  https://www.youtube.com/watch?v=DRNlDFKe2dc
 
 all: compose
 	docker-compose up
